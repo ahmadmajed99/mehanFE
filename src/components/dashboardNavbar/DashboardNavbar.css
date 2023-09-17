@@ -1,0 +1,198 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.navbiggerthing {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  top: 1rem;
+  left: 0;
+  z-index: 100;
+  transition: 0.3s ease-in;
+  background-color: transparent;
+}
+
+.bg-header {
+  background-color: #323d50;
+  opacity: 0.9;
+  top: 0;
+}
+
+.navbar-button:hover {
+  text-decoration: underline !important;
+}
+
+.navhidden_show {
+  position: fixed;
+  top: 5rem;
+  right: 0;
+  left: 0;
+  display: flex;
+  width: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #152238;
+  color: white;
+  z-index: 1;
+}
+.navhidden_hidden {
+  display: none;
+}
+.navmenu-menu {
+  background-color: transparent;
+  border: none;
+  padding: 8px;
+  color: white;
+  font-size: 18px;
+  font-family: sans-serif;
+  width: 100%;
+  border-radius: 5px;
+}
+.navmenu-menu a {
+  text-decoration: none;
+  color: white;
+}
+.navmenu-menu:hover {
+  background-color: #f87171;
+  transition: all 0.3s ease-in-out;
+}
+
+.navnavbar {
+  width: 100%;
+  max-width: 1900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: transparent;
+  max-height: 114.38px;
+}
+
+.navnavbar-logo {
+  background-color: #fff;
+  width: 7rem;
+  padding: 0.8rem;
+  transition: 0.3s ease-in;
+}
+
+.bg-Logo {
+  width: 4rem;
+}
+
+.navnavbar-list {
+  display: flex;
+}
+
+.navnavbar-button {
+  background-color: transparent;
+  border: none;
+  padding: 0px 24px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.navnavbar-button a {
+  text-decoration: none 2px solid #2b4c59;
+  color: white;
+  font-weight: 400;
+}
+
+.navcontact-button {
+  background-color: #2b4c59;
+  align-items: center;
+  display: flex;
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: sans-serif;
+  cursor: pointer;
+  border-radius: 50px;
+  height: 44px;
+}
+
+.navcontact-button a {
+  text-decoration: none;
+  color: #fff;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+}
+
+.navcontact-button:hover {
+  background-color: #2b4c59;
+  transition: all 0.3s ease-in-out;
+}
+
+.navmenu-button {
+  max-width: 40px;
+  max-height: 40px;
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0px !important;
+  cursor: pointer;
+}
+.navmenu {
+  max-width: 40px;
+  max-height: 40px;
+}
+@media (min-width: 769px) {
+  .navnavbar-menu {
+    display: none;
+  }
+  .navhidden_show {
+    display: none;
+  }
+}
+@media (max-width: 1023px) {
+  .navnavbar-button {
+    font-size: 18px;
+  }
+  .navcontact-button {
+    font-size: 14px;
+  }
+  .navnavbar-logo {
+    width: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navnavbar-list {
+    display: none;
+  }
+  .navnavbar-contact {
+    display: none;
+  }
+  .navbiggerthing {
+    top: 0;
+  }
+  .navnavbar {
+    background-color: #152238;
+  }
+  .navnavbar {
+    max-height: 46.38px;
+  }
+
+  .navnavbar-logo {
+    width: 3rem;
+  }
+}
+
+.navnavbar-contact.logg {
+  display: flex;
+}
+
+.navcontact-button.colog {
+  background-color: #2b4c59;
+}
+
+.cccategory_h {
+  font-size: 35px;
+  font-weight: bold;
+}

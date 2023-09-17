@@ -1,0 +1,106 @@
+.cardContainer {
+  display: flex;
+  background-color: #152238;
+  justify-content: center;
+  padding-bottom: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+}
+.card {
+  width: 400px;
+  height: 500px;
+  background-color: #000;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.card:hover {
+  transform: scale(0.9);
+}
+
+.card:hover:after {
+  height: 288px;
+}
+
+.card:hover .conText p {
+  margin-bottom: 0px;
+  opacity: 1;
+}
+
+.card:hover img {
+  transform: scale(1.25);
+}
+
+.card:after {
+  width: 100%;
+  content: "";
+  left: 0px;
+  bottom: 0px;
+  height: 150px;
+  position: absolute;
+  background: linear-gradient(to top, rgb(8, 8, 8), transparent);
+  z-index: 20;
+  transition: all 0.25s ease;
+}
+
+.card img {
+  height: 100%;
+  z-index: 10;
+  transition: all 0.25s ease;
+}
+
+.card .conText {
+  z-index: 30;
+  position: absolute;
+  bottom: 8px;
+  color: #fff;
+  padding: 28px;
+  padding-bottom: 30px;
+}
+
+.card .conText p {
+  font-size: 1.1rem;
+  opacity: 0;
+  margin-bottom: -170px;
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.seeMoreLink {
+  margin-left: auto;
+}
+.seeMoreBtn {
+  padding: 7px 17px;
+  border-radius: 12px;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  margin-top: 10px;
+
+  transition: all 0.25s ease;
+  font-family: poppins;
+  font-size: 0.75rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.seeMoreBtn:hover {
+  background: #fff;
+  color: #000;
+}
+
+@media only screen and (max-width: 660px) {
+  .card {
+    width: 328px;
+    height: 418px;
+  }
+}

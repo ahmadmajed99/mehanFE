@@ -1,0 +1,44 @@
+.news-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8rem;
+  width: 90vw;
+  margin: 0 auto;
+  /* padding: 2rem; */
+  font-weight: 400;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 2rem;
+}
+
+.news-wrapper {
+  background-color: white;
+  border-radius: 2rem;
+  padding: 3rem;
+}
+
+.news-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.news-image {
+  width: 25vw;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.news-description {
+  width: 25vw;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 1024px) {
+  .news-image,
+  .news-description {
+    width: 68vw;
+  }
+}

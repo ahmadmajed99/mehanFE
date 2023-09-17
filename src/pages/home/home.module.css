@@ -1,0 +1,245 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap);
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(rgba(36, 36, 69, 0), rgba(36, 36, 69, 0)),
+    url("https://hosting.renderforestsites.com/17644818/965566/media/65d755324e89aba9d804c6ba0352b9d0.jpg")
+      center center / cover no-repeat;
+  height: 105vh;
+  width: 100%;
+  overflow-x: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.firstpart {
+  height: 100vh;
+}
+
+.arrowCont {
+  display: none;
+}
+
+.arrowUpShow {
+  width: 2.2rem;
+  position: fixed;
+  right: 5rem;
+  bottom: 10rem;
+  cursor: pointer;
+  display: none;
+  flex-shrink: 0;
+  fill: rgb(36, 168, 244);
+}
+
+.arrowContHiden {
+  display: block;
+  display: flex;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #fff;
+  border-radius: 0.2rem;
+  width: 2.2rem;
+  position: fixed;
+  right: 4.7rem;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  bottom: 9.5rem;
+  z-index: 80;
+}
+
+.arrowUpHiden {
+  width: 2.2rem;
+  position: fixed;
+  right: 5rem;
+  bottom: 10rem;
+  display: block;
+  flex-shrink: 0;
+  fill: rgb(36, 168, 244);
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  transition: all 0.3s ease-in-out;
+  /* background-color: #fff; */
+}
+
+#firstPart {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  transition: all 0.3s ease-in-out;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 9rem;
+  padding-top: 13rem;
+  gap: 3rem;
+  width: 30vw;
+}
+
+.title {
+  font-size: 5rem;
+  color: #ffffff;
+  font-weight: 800;
+  line-height: 7rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #fff;
+}
+
+.description {
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.learnMoreBtn {
+  padding: 1rem 2rem;
+  font-weight: 400;
+  border: none;
+  font-size: 1.3rem;
+  border-radius: 1rem;
+  color: rgb(82, 84, 147);
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.goalContainer {
+  padding: 80px 0;
+  background: #152238;
+}
+
+.goalTitle {
+  width: 45vw;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.goalWrapper {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.goalName {
+  color: rgb(103, 235, 179);
+  font-weight: 700;
+  font-size: 1.9rem;
+  text-align: center;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.goalSubtitle {
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.hr {
+  height: 15rem;
+}
+
+.videoContainer {
+  padding: 30px 0;
+  background: #152238;
+  display: flex;
+  justify-content: center;
+}
+
+.videoWrapper {
+  width: 904px;
+  height: 500px;
+}
+
+.servicesContainer {
+}
+
+.fadeUp {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+@media only screen and (max-width: 950px) {
+  .wrapper {
+    width: 65vw;
+    margin-left: 2rem;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .description {
+    font-size: 1.5rem;
+  }
+
+  .goalTitle {
+    width: 100vw;
+  }
+
+  .goalWrapper {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .videoWrapper {
+    width: 550px;
+    height: 20em;
+  }
+
+  .card {
+    width: 328px;
+    height: 418px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .wrapper {
+    width: 71vw;
+    padding-top: 10rem;
+  }
+
+  .title {
+    line-height: 5rem;
+    font-size: 2.9rem;
+  }
+
+  hr {
+    display: none;
+  }
+  .goalWrapper {
+    flex-direction: column;
+  }
+  .goalTitle {
+    font-size: 1.4rem;
+  }
+  .arrowUpShow {
+    right: 1rem;
+  }
+
+  .arrowUpHiden {
+    right: 1rem;
+  }
+  .homeContainer {
+    height: 100vh;
+  }
+
+  .videoWrapper {
+    width: 326px;
+    height: 12em;
+  }
+
+  .arrowContHiden {
+    right: 0.7rem;
+  }
+}
